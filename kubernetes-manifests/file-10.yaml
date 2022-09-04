@@ -1,7 +1,7 @@
 apiVersion: v1
 stringData:
   username: my-name
-  password: "123456"
+  password: "v2&s@GQb*mA_l8"
 kind: Secret
 metadata:
   name: my-creds
