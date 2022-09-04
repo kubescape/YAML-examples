@@ -1,9 +1,7 @@
 apiVersion: v1
-stringData:
+data:
   username: my-name
-  password: v2&s@GQb*mA_l8
-kind: Secret
+kind: ConfigMap
 metadata:
   name: kubescape
   namespace: default
-type: Opaque
