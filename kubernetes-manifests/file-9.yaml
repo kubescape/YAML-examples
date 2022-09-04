@@ -10,5 +10,5 @@ spec:
   template:  
     spec:
       containers:
-      - image: docker.io/nginx:1.23.1
+      - image: my-registry/nginx:latest
         name: nginx
