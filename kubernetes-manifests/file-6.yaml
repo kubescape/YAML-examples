@@ -18,4 +18,12 @@ spec:
           containers:
             - image: python:3.9.10-alpine
               name: elasticsearch-snapshot
+              livenessProbe:
+                exec:
+                  command:
+                  - /bin/sh
+                  - -c
+                  - "/usr/bin/my-application-jobs --alive"
+                initialDelaySeconds: 10
+                periodSeconds: 5
   schedule: 0 10,22 * * *
