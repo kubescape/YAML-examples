@@ -17,4 +17,7 @@ spec:
           resources: 
           limits:
             cpu: YOUR_VALUE 
-            memory: YOUR_VALUE
+            memory: YOUR_VALUE 
+          requests:
+            cpu: YOUR_VALUE 
+            memory: YOUR_VALUE 
