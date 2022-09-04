@@ -12,10 +12,5 @@ spec:
     metadata:
       containers:
       - env:
-        - name: MYSQL_PWD
-          valueFrom:
-          secretKeyRef:
-            name: sqlcreds
-            key: pws
         image: mysql:8
         name: mysql
