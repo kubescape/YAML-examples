@@ -14,3 +14,7 @@ spec:
           image: prom/blackbox-exporter:v0.16.0
           imagePullPolicy: IfNotPresent
           name: blackbox-exporter
+          resources: 
+          limits:
+            cpu: YOUR_VALUE 
+            memory: YOUR_VALUE
