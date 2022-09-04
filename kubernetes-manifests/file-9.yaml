@@ -10,5 +10,5 @@ spec:
   template:  
     spec:
       containers:
-      - image: my-registry/nginx:latest
+      - image: my-registry/nginx
         name: nginx
