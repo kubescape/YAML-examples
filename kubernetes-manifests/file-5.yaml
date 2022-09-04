@@ -10,7 +10,7 @@ spec:
     app: tempo
   template:  
     spec:
-      automountServiceAccountToken: true
+      automountServiceAccountToken: false
       containers:
       - image: grafana/tempo:1.3.2
         name: querier
