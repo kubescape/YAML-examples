@@ -1,0 +1,21 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  labels:
+    app.kubernetes.io/managed-by: Helm
+    app: elasticsearch
+  name: elasticsearch-snapshot
+  namespace: ca-production
+spec:
+  concurrencyPolicy: Allow
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: elasticsearch
+        spec:
+          containers:
+            - image: python:3.9.10-alpine
+              name: elasticsearch-snapshot
+  schedule: 0 10,22 * * *

@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  username: my-name
+  password: v2&s@GQb*mA_l8
+kind: ConfigMap
+metadata:
+  name: kubescape
+  namespace: default

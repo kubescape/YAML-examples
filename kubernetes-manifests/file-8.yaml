@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx
+  name: nginx
+spec:
+  selector:
+    app: nginx
+  template:  
+    spec:
+      containers:
+      - image: docker.io/nginx
+        name: nginx

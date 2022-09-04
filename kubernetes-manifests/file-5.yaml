@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tempo
+  name: tempo-tempo-distributed-querier
+  namespace: tracing
+spec:
+  selector:
+    app: tempo
+  template:  
+    spec:
+      automountServiceAccountToken: true
+      containers:
+      - image: grafana/tempo:1.3.2
+        name: querier
