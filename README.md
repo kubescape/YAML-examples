@@ -9,5 +9,5 @@ Scan the directory with Kubescape and open PRs with the proper fixes **The PRs s
 ## Contribution
 
 There are two ways of contributing:
-1. Adding misconfigured kubernetes manifests
-2. Opening PRs with the appropriate fixes (mae sure the fix has not been proposed yet)
+1. Adding misconfigured Kubernetes manifests
+2. Opening PRs with the appropriate fixes (make sure the fix has not been proposed yet)
